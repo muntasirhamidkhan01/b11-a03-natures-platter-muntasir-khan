@@ -23,12 +23,6 @@
         a{
             cursor: pointer;
         }
-        .disturb-banana {
-        background-image: url("./c2-assets/vegetable-offer.png");
-        background-position: bottom right;
-        background-size: cover;
-        background-repeat: no-repeat;
-      }
         @keyframes hehe {
       0% {
         color: red;
@@ -81,6 +75,30 @@
     from { transform: translateX(100vw); }
     to { transform: translateX(-100%); }
   }
+    @keyframes life {
+      0% {
+        transform: rotate(0deg);
+        scale: 0.7;
+      }
+
+      25% {
+        transform: rotate(5deg);
+        scale: 0.9;
+      }
+      75% {
+        transform: rotate(-5deg);
+        scale: 0.9;
+      }
+
+      100% {
+        transform: rotate(0deg);
+        scale: 0.7;
+      }
+    }
+    @keyframes drive {
+    from { transform: translateX(100vw); }
+    to { transform: translateX(-100%); }
+  }
 
     .woo {
       animation: hehe 6s infinite;
@@ -90,6 +108,10 @@
     }
     .drill{
       animation: spin 6s ease-in-out infinite;
+      overflow: hidden;
+    }
+    .chill{
+      animation: life 6s ease-in-out infinite;
       overflow: hidden;
     }
     .delivery-truck{
@@ -169,7 +191,7 @@
        <div class="pt-12  min-h-screen">
           <!-- Banner Text Section -->
            <div class="text-center">
-              <h1 class="mb-5 text-5xl font-bold woo">Freshness <span class="text-accent-primary noo"> You Can
+              <h1 class="mb-5 text-5xl font-bold woo chill">Freshness <span class="text-accent-primary noo chill"> You Can
                   <br class="hidden md:block">
                   Count</span> On, Prices You’ll Love!</h1>
                   <p class="mb-5 opacity-80">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
@@ -238,10 +260,10 @@
                 <div class="mx-4 grid grid-cols-4 grid-rows-5 md:grid-cols-9 md:grid-rows-3 gap-4 py-8">
                     <!-- Big Card -->
                     <div class="rounded-xl bg-gradient-to-tl from-white to-accent-primary col-span-4 lg:col-span-3 row-span-3 disturb-banana">
-                      <div class="space-y-0">
+                      <div class="p-5">
                         <h5 class="text-white text-2xl font-bold">30% off</h5>
                         <p>Discover a world of treats, toys, and essentials handpicked for</p>
-                        <button class="btn">Buy Now</button>
+                        <button class="btn mt-4">Buy Now</button>
                       </div >
                       <!-- Big Card Image Section -->
                       <div class="w-[60%] bg-cover bg-left-bottom bg-no-repeat ml-auto">
