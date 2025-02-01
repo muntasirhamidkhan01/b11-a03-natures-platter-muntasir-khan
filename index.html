@@ -23,6 +23,12 @@
         a{
             cursor: pointer;
         }
+        .disturb-banana {
+        background-image: url("./c2-assets/vegetable-offer.png");
+        background-position: bottom right;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
         @keyframes hehe {
       0% {
         color: red;
@@ -215,7 +221,7 @@
       </section>
 
       <!-- Animation Section -->
-      <section>
+      <section class="hidden md:block">
         <div >
           <img class="delivery-truck w-40 h-40" src="c2-assets/car-removebg-.png" alt="">
         </div>
@@ -230,7 +236,7 @@
                 <!-- All Cards Container -->
                 <div class="mx-4 grid grid-cols-4 grid-rows-5 md:grid-cols-9 md:grid-rows-3 gap-4 py-8">
                     <!-- Big Card -->
-                    <div class="rounded-xl bg-gradient-to-tl from-white to-accent-primary col-span-4 lg:col-span-3 row-span-3 relative">
+                    <div class="rounded-xl bg-gradient-to-tl from-white to-accent-primary col-span-4 lg:col-span-3 row-span-3 disturb-banana relative">
                       <div class="">
                         <h5 class="text-white text-2xl font-bold">30% off</h5>
                         <p>Discover a world of treats, toys, and essentials handpicked for</p>
@@ -381,11 +387,11 @@
       </section>
 
       <!-- Payment Section -->
-       <section class="bg-secondary-primary-bg py-20 mb-80">
+       <section class="bg-secondary-primary-bg py-20 mb-[500px] md:mb-60">
         <!-- Container -->
         <div class="rounded-xl px-4 md:container mx-auto">
         <!-- img section -->
-        <div class="flex">
+        <div class="flex flex-col md:flex-row">
           <div w>
             <img class="w-[90%]" src="c2-assets/Stripe-logo.png" alt="">
           </div>
