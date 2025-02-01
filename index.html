@@ -60,21 +60,21 @@
     @keyframes spin {
       0% {
         transform: rotate(0deg);
-        scale: 1;
+        scale: 0.7;
       }
 
       25% {
         transform: rotate(10deg);
-        scale: 1.1;
+        scale: 0.9;
       }
       75% {
         transform: rotate(-10deg);
-        scale: 1.1;
+        scale: 0.9;
       }
 
       100% {
         transform: rotate(0deg);
-        scale: 1;
+        scale: 0.7;
       }
     }
     @keyframes drive {
@@ -90,6 +90,7 @@
     }
     .drill{
       animation: spin 6s ease-in-out infinite;
+      overflow: hidden;
     }
     .delivery-truck{
       animation: drive 5s linear infinite;
@@ -236,14 +237,14 @@
                 <!-- All Cards Container -->
                 <div class="mx-4 grid grid-cols-4 grid-rows-5 md:grid-cols-9 md:grid-rows-3 gap-4 py-8">
                     <!-- Big Card -->
-                    <div class="rounded-xl bg-gradient-to-tl from-white to-accent-primary col-span-4 lg:col-span-3 row-span-3 disturb-banana relative">
-                      <div class="">
+                    <div class="rounded-xl bg-gradient-to-tl from-white to-accent-primary col-span-4 lg:col-span-3 row-span-3 disturb-banana">
+                      <div class="space-y-0">
                         <h5 class="text-white text-2xl font-bold">30% off</h5>
                         <p>Discover a world of treats, toys, and essentials handpicked for</p>
                         <button class="btn">Buy Now</button>
                       </div >
                       <!-- Big Card Image Section -->
-                      <div class="w-[60%] bg-cover bg-left-bottom bg-no-repeat">
+                      <div class="w-[60%] bg-cover bg-left-bottom bg-no-repeat ml-auto">
                         <img src="c2-assets/vegetable-offer.png" alt="vegetables-banana">
                       </div>
                     </div>
